@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 header {
@@ -54,4 +55,21 @@ section img {
     margin: 0 0 10px 10px;
     max-inline-size: 200px;
     max-block-size: 200px;
+}
+.background-container {
+    background-image: url('your_background_image_filename.jpg'); /* Use the actual filename of your background image */
+    background-size: cover;
+    background-position: center;
+    block-size: 100vh; /* Adjust as needed */
+}
+
+.icon-link-container {
+    position: absolute;
+    inset-block-start: 20px; /* Adjust as needed */
+    inset-inline-start: 20px; /* Adjust as needed */
+}
+
+.icon-link-container img {
+    inline-size: 50px; /* Adjust as needed */
+    block-size: 50px; /* Adjust as needed */
 }
