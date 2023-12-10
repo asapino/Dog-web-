@@ -15,6 +15,7 @@ section {
     max-inline-size: 800px;
     margin: 20px auto;
     padding: 20px;
+    overflow: hidden; /* Add overflow property to clear floated elements */
 }
 
 form {
@@ -45,4 +46,12 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
+}
+
+/* Add styling for the right side images */
+section img {
+    float: inline-end;
+    margin: 0 0 10px 10px;
+    max-inline-size: 200px;
+    max-block-size: 200px;
 }
