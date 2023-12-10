@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    max-inline-size: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    inline-size: 100%;
+    inset-block-end: 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+button {
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
