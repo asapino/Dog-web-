@@ -57,7 +57,7 @@ section img {
     max-block-size: 200px;
 }
 .background-container {
-    background-image: url('your_background_image_filename.jpg'); /* Use the actual filename of your background image */
+    background-image: url('background.jpeg'); /* Use the actual filename of your background image */
     background-size: cover;
     background-position: center;
     block-size: 100vh; /* Adjust as needed */
