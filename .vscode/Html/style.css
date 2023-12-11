@@ -1,75 +1,92 @@
+/* style.css */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-header {
-    background-color: maroon;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-
-section {
-    max-inline-size: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    overflow: hidden; /* Add overflow property to clear floated elements */
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-footer {
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    inline-size: 100%;
-    inset-block-end: 0;
-}
-
-footer a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-button {
-    background-color: maroon;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Add styling for the right side images */
-section img {
-    float: inline-end;
-    margin: 0 0 10px 10px;
-    max-inline-size: 200px;
-    max-block-size: 200px;
-}
-.background-container {
-    background-image: url('background.jpeg'); 
+    background-image: url('background.jpeg');
     background-size: cover;
-    background-position: center;
-    block-size: 100vh; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.background-container {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .icon-link-container {
-    position: absolute;
-    inset-block-start: 20px; /* Adjust as needed */
-    inset-inline-start: 20px; /* Adjust as needed */
+    position: fixed;
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+    z-index: 1;
 }
 
-.icon-link-container img {
-    inline-size: 50px; /* Adjust as needed */
-    block-size: 50px; /* Adjust as needed */
+header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-block-end: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-block-end: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    inset-block-end: 20px;
+    inline-size: 100%;
+    color: white;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
 }
